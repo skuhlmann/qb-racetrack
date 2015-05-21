@@ -14,4 +14,5 @@ var client = new Base({config: config});
 function showRace(){
   var races = client.getRecordInfo("races", 1);
   $("#race-list").removeClass("hidden");
+  $("#race-list").append(races);
 };
