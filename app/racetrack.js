@@ -21,8 +21,7 @@ var Race = {
   },
 
   getFirst: function(){
-    var race = client.getRecordInfo("races", 1);
-    console.log(race.fields);
+    return client.getRecordInfo("races", 1);
   }
 };
 
