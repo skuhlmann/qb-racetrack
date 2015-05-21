@@ -19,7 +19,7 @@ var client = new Base({config: config});
 //functions
 
 function showRaces(){
-  var races = client.getRecordInfo("bjxj6mk28", 1)
+  var races = client.getRecordInfo("races", 1)
   console.log(races);
   $("#race-list").removeClass("hidden");
 };
