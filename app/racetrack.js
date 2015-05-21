@@ -17,15 +17,20 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 var Race = {
   getAll: function(){
     var races = client.all("races");
-    console.log(races);
     //$("#race-list").removeClass("hidden");
+  }
+
+  getFirst: function(){
+    var race = client.first("races");
+    console.log(race)
   }
 };
 
 //Document ready
 
 $(document).ready(function(){
-  $('#show-races').click(function(){
-    Race.getAll();
+  $('#first-race').click(function(){
+    $("#race-list").removeClass("hidden");
+    Race.getFirst();
   });
 });
