@@ -29,7 +29,7 @@ var Race = {
 //Document ready
 
 $(document).ready(function(){
-  $('#first-race').click(function(){
+  $('#race-detail').click(function(){
     $("#race").removeClass("hidden");
     Race.getFirst();
   });
