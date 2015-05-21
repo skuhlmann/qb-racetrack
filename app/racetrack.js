@@ -35,18 +35,10 @@ var Race = {
 //Document ready
 
 $(document).ready(function(){
-  $('#race-1').click(function(){
-    $("#race").removeClass("hidden");
-    Race.getOne(1);
-  });
 
-  $('#race-2').click(function(){
-    $("#race").removeClass("hidden");
-    Race.getOne(2);
-  });
-
-  $('#race-3').click(function(){
-    $("#race").removeClass("hidden");
-    Race.getOne(3);
+  $('#race').click(function(){
+    var raceId = this.data("race-number");
+    $('#race').removeClass("hidden");
+    Race.getOne(raceId);
   });
 });
