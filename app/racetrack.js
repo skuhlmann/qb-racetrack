@@ -13,7 +13,7 @@ var client = new Base({config: config});
 
 function showRace(){
   var race = client.getRecordInfo("races", 1);
-  debugger;
+  console.log("this");
   $("#race-list").removeClass("hidden");
   $(".name").append(race.name);
 };
