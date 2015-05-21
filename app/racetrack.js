@@ -1,3 +1,5 @@
+//globals
+
 var config = {
   races: {
     dbid: "bjxj6mk28",
@@ -10,9 +12,20 @@ var config = {
 };
 
 var client = new Base({config: config});
-var races = client.all("races")
 
-function showRaces(races){
+
+//functions
+
+function showRaces(){
+  var races = client.all("races")
   $("#race-list").removeClass("hidden");
   console.log(races);
 };
+
+//Document ready
+
+$(document).ready(function(){
+  $('#show-races').click(function(){
+    showRaces()
+  });
+});
