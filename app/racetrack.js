@@ -30,7 +30,7 @@ var Race = {
 
 $(document).ready(function(){
   $('#first-race').click(function(){
-    $("#race-detail").removeClass("hidden");
+    $("#race").removeClass("hidden");
     Race.getFirst();
   });
 });
