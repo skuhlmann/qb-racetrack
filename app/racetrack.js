@@ -18,7 +18,7 @@ var Race = {
   getAll: function(){
     var races = client.all("races");
     //$("#race-list").removeClass("hidden");
-  }
+  },
 
   getFirst: function(){
     var race = client.first("races");
