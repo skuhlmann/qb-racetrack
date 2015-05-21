@@ -45,7 +45,7 @@ $(document).ready(function(){
     Race.getOne(2);
   });
 
-  $('#race-1').click(function(){
+  $('#race-3').click(function(){
     $("#race").removeClass("hidden");
     Race.getOne(3);
   });
