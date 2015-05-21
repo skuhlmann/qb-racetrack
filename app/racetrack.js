@@ -37,6 +37,7 @@ var Race = {
 $(document).ready(function(){
 
   $('#race').click(function(){
+    console.log(this);
     var raceId = this.data("race-number");
     $('#race').removeClass("hidden");
     Race.getOne(raceId);
