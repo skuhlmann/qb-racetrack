@@ -26,6 +26,6 @@ function showRaces(){
 
 $(document).ready(function(){
   $('#show-races').click(function(){
-    showRaces()
+    showRaces();
   });
 });
