@@ -1,12 +1,3 @@
-    //*************************************************\\
-    //================ DOCUMENT.READY =================\\
-    //*************************************************\\
-
-$(document).ready(function(){
-
-
-});
-
 var config = {
   races: {
     dbid: "bjxj6mk28",
@@ -24,8 +15,3 @@ function showRace(){
   var races = client.getRecordInfo("races", 1);
   $("#race-list").removeClass("hidden");
 };
-
-
-
-
-
