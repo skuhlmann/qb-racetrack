@@ -18,6 +18,7 @@ var Race = {
 
   getAll: function(){
     var races = client.all("races");
+    //$("#race-list").removeClass("hidden");
   },
 
   getOne: function(id){
@@ -39,5 +40,20 @@ $(document).ready(function(){
     var raceId = parseInt($(this).attr("data-race-number"));
     $('#race').removeClass("hidden");
     Race.getOne(raceId);
+  });
+
+  $('#race-1').click(function(){
+    $("#race").removeClass("hidden");
+    Race.getOne(1);
+  });
+
+  $('#race-2').click(function(){
+    $("#race").removeClass("hidden");
+    Race.getOne(2);
+  });
+
+  $('#race-3').click(function(){
+    $("#race").removeClass("hidden");
+    Race.getOne(3);
   });
 });
