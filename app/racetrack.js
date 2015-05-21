@@ -14,6 +14,8 @@ var config = {
 var client = new Base({config: config});
 
 
+
+
 //functions
 
 function showRaces(){
@@ -24,6 +26,9 @@ function showRaces(){
 //Document ready
 
 $(document).ready(function(){
+
+console.log(config)
+
   $('#show-races').click(function(){
     showRaces();
   });
