@@ -1,5 +1,4 @@
 //config
-
 var config = {
   races: {
     dbid: "bjxj6mk28",
@@ -11,8 +10,7 @@ var config = {
   }
 };
 
-var client = new Base({config: config});
-
+var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 
 //Race object
 
