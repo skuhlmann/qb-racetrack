@@ -22,6 +22,7 @@ var Race = {
 
   getFirst: function(){
     var race = client.find("races", 1);
+    console.log(race);
   }
 };
 
