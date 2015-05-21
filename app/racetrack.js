@@ -10,10 +10,9 @@ var config = {
 };
 
 var client = new Base({config: config});
+var races = client.all("races")
 
-function showRace(){
-  var race = client.getRecordInfo("races", 1);
-  console.log(client);
+function showRaces(races){
   $("#race-list").removeClass("hidden");
-  $(".name").append(race.name);
+  console.log(races);
 };
