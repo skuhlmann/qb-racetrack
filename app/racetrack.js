@@ -16,11 +16,13 @@ var client = new Base({config: config});
 //Race object
 
 var Race = {
-  showRaces: function(){
-    var races = client.getRecordInfo("races", 2);
+  allRaces: function(){
+    var races = client.all("races");
     console.log(races);
     $("#race-list").removeClass("hidden");
   }
+
+
 
 };
 
