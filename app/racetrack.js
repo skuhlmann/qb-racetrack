@@ -19,8 +19,8 @@ var races = client.all("races");
 
 var Race = {
   getAll: function(){
-    console.log(races);
     $("#race-list").removeClass("hidden");
+    console.log(races);
   }
 };
 
