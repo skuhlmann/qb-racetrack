@@ -15,7 +15,6 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 //Race object
 
 var Race = {
-  var self = this,
 
   getAll: function(){
     var races = client.all("races");
@@ -24,7 +23,7 @@ var Race = {
 
   getFirst: function(){
     var race = client.find("races", 1);
-    self.buildRaceElement(race);
+    Race.buildRaceElement(race);
   },
 
   buildRaceElement: function(race){
