@@ -16,8 +16,8 @@ var client = new Base({config: config});
 //Race object
 
 var Race = {
-  firstRace: function(){
-    var races = client.first("races");
+  getAll: function(){
+    var races = client.all("races");
     console.log(races);
     $("#race-list").removeClass("hidden");
   }
@@ -27,6 +27,6 @@ var Race = {
 
 $(document).ready(function(){
   $('#show-races').click(function(){
-    Race.firstRace();
+    Race.getAll();
   });
 });
