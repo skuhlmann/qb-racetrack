@@ -14,7 +14,6 @@ var config = {
 var client = new Base({config: config});
 
 
-
 //Race object
 
 var Race = {
