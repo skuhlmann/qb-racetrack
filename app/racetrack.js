@@ -37,8 +37,18 @@ var Race = {
 //Document ready
 
 $(document).ready(function(){
-  $('#race-detail').click(function(){
+  $('#race-1').click(function(){
     $("#race").removeClass("hidden");
     Race.getOne(1);
+  });
+
+  $('#race-2').click(function(){
+    $("#race").removeClass("hidden");
+    Race.getOne(2);
+  });
+
+  $('#race-3').click(function(){
+    $("#race").removeClass("hidden");
+    Race.getOne(3);
   });
 });
