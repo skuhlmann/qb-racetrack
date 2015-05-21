@@ -1,4 +1,4 @@
-//globals
+//config
 
 var config = {
   races: {
@@ -13,21 +13,20 @@ var config = {
 
 var client = new Base({config: config});
 
+//Race object
 
+var Race = {
+  showRaces: function(){
+    var races = client.getRecordInfo("races", 2);
+    console.log(races);
+    $("#race-list").removeClass("hidden");
+  }
 
-
-//functions
-
-function showRaces(){
-  var races = client.getRecordInfo("races", 2)
-  console.log(races);
-  $("#race-list").removeClass("hidden");
 };
 
 //Document ready
 
 $(document).ready(function(){
-
   $('#show-races').click(function(){
     showRaces();
   });
