@@ -27,9 +27,8 @@ var Race = {
   },
 
   buildRaceElement: function(race){
-
     $('#race .name').append(race.name);
-    $('#race .date').text(race.date);
+    $('#race .purse').text("$" + race.purse);
   }
 };
 
@@ -46,7 +45,7 @@ $(document).ready(function(){
     Race.getOne(2);
   });
 
-  $('#race-3').click(function(){
+  $('#race-1').click(function(){
     $("#race").removeClass("hidden");
     Race.getOne(3);
   });
