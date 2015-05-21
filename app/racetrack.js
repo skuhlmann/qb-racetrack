@@ -24,7 +24,7 @@ var Race = {
 
   getFirst: function(){
     var race = client.find("races", 1);
-    buildRaceElement(race);
+    self.buildRaceElement(race);
   },
 
   buildRaceElement: function(race){
