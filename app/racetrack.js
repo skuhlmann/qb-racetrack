@@ -27,7 +27,7 @@ function showRaces(){
 
 $(document).ready(function(){
 
-console.log(config)
+console.log(config);
 
   $('#show-races').click(function(){
     showRaces();
