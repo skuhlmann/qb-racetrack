@@ -23,7 +23,7 @@ var Race = {
   getFirst: function(){
     var race = client.find("races", 1);
     buildRaceElement(race);
-  }
+  },
 
   buildRaceElement: function(race){
     $('#race .name').append(race.name);
