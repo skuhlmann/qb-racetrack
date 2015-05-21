@@ -16,20 +16,17 @@ var client = new Base({config: config});
 //Race object
 
 var Race = {
-  allRaces: function(){
-    var races = client.all("races");
+  firstRace: function(){
+    var races = client.first("races");
     console.log(races);
     $("#race-list").removeClass("hidden");
   }
-
-
-
 };
 
 //Document ready
 
 $(document).ready(function(){
   $('#show-races').click(function(){
-    Race.allRaces();
+    Race.firstRace();
   });
 });
