@@ -28,6 +28,6 @@ var Race = {
 
 $(document).ready(function(){
   $('#show-races').click(function(){
-    showRaces();
+    Race.showRaces();
   });
 });
