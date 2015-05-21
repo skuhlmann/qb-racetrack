@@ -27,10 +27,9 @@ var Race = {
   },
 
   buildRaceElement: function(race){
+
     $('#race .name').append(race.name);
-    $('#race .date').append(race.date);
-    $('#race .distance').append(race.distance);
-    $('#race .purse').append(race.purse);
+    $('#race .date').text(race.date);
   }
 };
 
