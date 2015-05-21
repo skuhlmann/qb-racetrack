@@ -13,15 +13,15 @@ var config = {
 
 var client = new Base({config: config});
 
-var races = client.all("races");
+
 
 //Race object
 
 var Race = {
   getAll: function(){
-    $("#race-list").removeClass("hidden");
-    $("#race-list").append(races);
+    var races = client.all("races");
     console.log(races);
+    //$("#race-list").removeClass("hidden");
   }
 };
 
