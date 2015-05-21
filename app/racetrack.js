@@ -21,8 +21,8 @@ var Race = {
     //$("#race-list").removeClass("hidden");
   },
 
-  getFirst: function(){
-    var race = client.find("races", 1);
+  getOne: function(id){
+    var race = client.find("races", id);
     Race.buildRaceElement(race);
   },
 
@@ -39,6 +39,6 @@ var Race = {
 $(document).ready(function(){
   $('#race-detail').click(function(){
     $("#race").removeClass("hidden");
-    Race.getFirst();
+    Race.getOne(1);
   });
 });
