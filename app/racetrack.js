@@ -11,8 +11,6 @@ var config = {
 
 var client = new Base({config: config});
 
-var
-
 function showRace(){
   var race = client.getRecordInfo("races", 1);
   debugger;
