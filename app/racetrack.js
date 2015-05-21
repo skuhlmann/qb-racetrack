@@ -22,7 +22,7 @@ var Race = {
 
   getFirst: function(){
     var race = client.first("races");
-    console.log(race)
+    console.log(race);
   }
 };
 
