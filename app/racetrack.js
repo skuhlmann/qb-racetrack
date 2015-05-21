@@ -15,7 +15,7 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 //Race object
 
 var Race = {
-  self = this;
+  var self = this;
 
   getAll: function(){
     var races = client.all("races");
