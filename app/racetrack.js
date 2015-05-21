@@ -36,7 +36,7 @@ var Race = {
 
 $(document).ready(function(){
 
-  $('#race').click(function(){
+  $('#racebut').click(function(){
     var raceId = parseInt($(this).attr("data-race-number"));
     $('#race').removeClass("hidden");
     Race.getOne(raceId);
