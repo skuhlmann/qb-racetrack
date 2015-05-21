@@ -15,6 +15,10 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 //Race object
 
 var Race = {
+  buildRaceElement: function(race){
+    $('#race .name').append(race.name);
+  },
+
   getAll: function(){
     var races = client.all("races");
     //$("#race-list").removeClass("hidden");
@@ -23,10 +27,6 @@ var Race = {
   getFirst: function(){
     var race = client.find("races", 1);
     buildRaceElement(race);
-  },
-
-  buildRaceElement: function(race){
-    $('#race .name').append(race.name);
   }
 };
 
