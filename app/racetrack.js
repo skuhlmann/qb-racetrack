@@ -20,6 +20,7 @@ var races = client.all("races");
 var Race = {
   getAll: function(){
     $("#race-list").removeClass("hidden");
+    $("#race-list").append(races);
     console.log(races);
   }
 };
