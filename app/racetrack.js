@@ -27,7 +27,7 @@ var Race = {
   },
 
   buildRaceElement: function(race){
-    $('#race .name').append(race.name);
+    $('#race .name').text(race.name);
     $('#race .purse').text("$" + race.purse);
   }
 };
