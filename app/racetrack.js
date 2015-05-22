@@ -32,25 +32,8 @@ var Race = {
 
       section.push($listTemplate)
     }
-
     app.$raceList.html(section).show();
-
-
-
-    // races.forEach(function(race) {
-    //   var $listTemplate = app.$raceList.clone(true);
-
-    //   $listTemplate.find('.raceName').text(race.name);
-    //   $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
-    //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
-
-
-    // });
-
-    // app.$raceList.append($listTemplate).show();
-
   }
-
 };
 
 //App object
