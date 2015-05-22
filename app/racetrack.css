@@ -1,5 +1,11 @@
-body {
+body{
   margin: 20px;
+  background-color: #EDE3D4;
+}
+
+a{
+  color: #501B2D;
+
 
 }
 
@@ -7,4 +13,4 @@ body {
       font-size: 48px;
       padding-bottom: 20px;
       margin-bottom: 40px;
-    }
+}
