@@ -21,10 +21,13 @@ var Race = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      $("#raceList").append(function(){
-        $("#raceList .name").text(race.name);
-        $("#raceList .purse").text("$ " + race.purse);
-      });
+      app.$raceList.append(race.name);
+
+
+      // $("#raceList").append(function(){
+      //   $("#raceList .name").text(race.name);
+      //   $("#raceList .purse").text("$ " + race.purse);
+      // });
     });
   }
 
@@ -34,7 +37,12 @@ var Race = {
 
 var app = {
   init: function() {
+    this.cacheElements();
     this.loadRaces();
+  },
+
+  cacheElements: function() {
+    this.$raceList = $("#raceList");
   },
 
   loadRaces: function() {
