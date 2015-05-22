@@ -21,8 +21,7 @@ var Race = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      app.$raceList.text(race.name);
-
+      app.$raceList.append("<li>" + race.name + "</li>");
 
       // $("#raceList").append(function(){
       //   $("#raceList .name").text(race.name);
