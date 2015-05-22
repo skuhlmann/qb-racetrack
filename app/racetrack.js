@@ -20,6 +20,23 @@ var Race = {
   },
 
   buildRaceList: function(races) {
+    var section = [];
+
+    for (var i in races) {
+      var race = race[i];
+      var $listTemplate = app.$raceList.clone(true).show();
+
+      $listTemplate.find('.raceName').text(race.name);
+      $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
+      $listTemplate.find('.raceDistance').text("Distance: " + race.distance);
+
+      section.push($listTemplate)
+    }
+
+    app.$raceList.append(section).show();
+
+
+
     races.forEach(function(race) {
       var $listTemplate = app.$raceList.clone(true);
 
@@ -27,8 +44,10 @@ var Race = {
       $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
       $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
 
-      app.$raceList.append($listTemplate).show();
+
     });
+
+    app.$raceList.append($listTemplate).show();
 
   }
 
