@@ -22,11 +22,15 @@ var Race = {
   buildRaceList: function(races) {
     races.forEach(function(race) {
       var $listTemplate = app.$raceList.clone(true);
-      $listTemplate.append(function() {
-        $listTemplate.find('.raceName').append(race.name);
-        $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
-        $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
-      });
+
+      $listTemplate.find('.raceName').append(race.name);
+
+
+      // $listTemplate.append(function() {
+      //   $listTemplate.find('.raceName').append(race.name);
+      //   $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
+      //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
+      // });
     });
   }
 
