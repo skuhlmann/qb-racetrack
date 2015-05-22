@@ -22,9 +22,9 @@ var Race = {
   buildRaceList: function(races) {
     races.forEach(function(race) {
       app.$raceList.append(function() {
-        app.$raceList.find('.name').text(race.name);
-        app.$raceList.find('.purse').text("Purse: $ " + race.purse);
-        app.$raceList.find('.distance').text("Distance: " + race.distance);
+        app.$raceList.find('.raceName').text(race.name);
+        app.$raceList.find('.racePurse').text("Purse: $ " + race.purse);
+        app.$raceList.find('.raceDistance').text("Distance: " + race.distance);
       });
 
       // $("#raceList").append(function(){
