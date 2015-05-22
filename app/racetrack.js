@@ -19,6 +19,10 @@ var Race = {
     return client.all("races", {"clist": ["3", "6", "7", "9", "15"], "slist": "3"});
   },
 
+  getOne: function(id){
+    return client.getRecordInfo("races", id);
+  },
+
   buildRaceList: function(races) {
     var section = [];
 
@@ -38,7 +42,9 @@ var Race = {
       section.push($listTemplate)
     }
     app.$raceList.html(section).show();
-  }
+  },
+
+
 };
 
 //App object
