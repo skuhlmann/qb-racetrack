@@ -29,7 +29,7 @@ var Race = {
       $listTemplate.find('.raceName').text(race.name);
       $listTemplate.find('.raceDate').text("Date: " + BaseHelpers.dateToString(race.date));
       $listTemplate.find('.raceBtn').text(race.name + " details")
-                                    .click: function() {
+                                    .click(function() {
                                       alert("this needs to go to " + race.name + " page");
                                     };
 
