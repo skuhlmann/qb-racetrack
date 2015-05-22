@@ -32,7 +32,7 @@ var Race = {
 
 //App object
 
-var app {
+var app = {
   init: function() {
     this.loadRaces();
   },
