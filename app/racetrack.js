@@ -27,6 +27,7 @@ var Race = {
       var $listTemplate = app.$raceList.clone(true).show();
 
       $listTemplate.find('.raceName').text(race.name);
+      $listTemplate.find('.raceDate').text(race.date);
       $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
       $listTemplate.find('.raceDistance').text("Distance: " + race.distance + "furlongs");
 
