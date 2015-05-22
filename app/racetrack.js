@@ -16,7 +16,7 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 
 var Race = {
   getAll: function(){
-    return client.all("races", {"slist": "3"});
+    return client.all("races", {"clist": ["3", "6", "7", "9", "15"], slist": "3"});
   },
 
   buildRaceList: function(races) {
