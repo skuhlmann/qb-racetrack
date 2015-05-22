@@ -26,11 +26,6 @@ var Race = {
         app.$raceList.find('.racePurse').append("Purse: $ " + race.purse);
         app.$raceList.find('.raceDistance').append("Distance: " + race.distance);
       });
-
-      // $("#raceList").append(function(){
-      //   $("#raceList .name").text(race.name);
-      //   $("#raceList .purse").text("$ " + race.purse);
-      // });
     });
   }
 
