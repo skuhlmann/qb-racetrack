@@ -31,6 +31,7 @@ var Race = {
       $listTemplate.find('.raceBtn').text(race.name + " details")
                                     .click: function() {
                                       alert("this needs to go to " + race.name + " page");
+                                    };
 
 
       // $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
