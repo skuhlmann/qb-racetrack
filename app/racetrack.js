@@ -33,7 +33,7 @@ var Race = {
       section.push($listTemplate)
     }
 
-    app.$raceList.text(section).show();
+    app.$raceList.html(section).show();
 
 
 
