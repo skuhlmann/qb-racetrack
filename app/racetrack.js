@@ -19,15 +19,15 @@ var Race = {
     return client.all("races");
   },
 
-  getOne: function(id){
-    var race = client.find("races", id);
-    Race.buildRaceElement(race);
-  },
-
-  buildRaceElement: function(race){
-    $('#race .name').text(race.name);
-    $('#race .purse').text("$" + race.purse);
+  buildRaceList: function(races) {
+    races.forEach(function(race) {
+      $("#raceList").append(function(){
+        $("#raceList .name").text(race.name);
+        $("#raceList .purse").text("$ " + race.purse);
+      });
+    });
   }
+
 };
 
 //App object
@@ -39,15 +39,6 @@ var app = {
 
   loadRaces: function() {
     var races = Race.getAll();
-    app.buildRaceList(races);
-  },
-
-  buildRaceList: function(races) {
-    races.forEach(function(race) {
-      $("#raceList").append(function(){
-        $("#raceList .name").text(race.name);
-        $("#raceList .purse").text("$ " + race.purse);
-      });
-    });
+    Race.buildRaceList(races);
   }
 };
