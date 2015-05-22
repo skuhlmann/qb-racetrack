@@ -18,7 +18,6 @@ var Race = {
 
   getAll: function(){
     var races = client.all("races");
-    //$("#race-list").removeClass("hidden");
   },
 
   getOne: function(id){
@@ -36,7 +35,7 @@ var Race = {
 
 $(document).ready(function(){
 
-  $('#racebut').click(function(){
+  $('#racelink').click(function(){
     var raceId = parseInt($(this).attr("data-race-number"));
     $('#race').removeClass("hidden");
     Race.getOne(raceId);
