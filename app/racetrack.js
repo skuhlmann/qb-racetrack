@@ -21,7 +21,11 @@ var Race = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      app.$raceList.append("<li>" + race.name + "</li>");
+      app.$raceList.append(function() {
+        app.$raceList.find('.name').text(race.name);
+        app.$raceList.find('.purse').text("Purse: $ " + race.purse);
+        app.$raceList.find('.distance').text("Distance: " + race.distance);
+      });
 
       // $("#raceList").append(function(){
       //   $("#raceList .name").text(race.name);
