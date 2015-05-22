@@ -35,7 +35,7 @@ var Race = {
       //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
       // });
     });
-    return section
+    return section;
   }
 
 };
