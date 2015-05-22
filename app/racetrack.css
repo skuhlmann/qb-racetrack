@@ -1,3 +1,5 @@
+/* Elements */
+
 body{
   margin: 20px;
   background-color: #EDE3D4;
@@ -8,12 +10,7 @@ a{
   color: #85A6A1;
 }
 
-.text{
-      font-size: 48px;
-      padding-bottom: 20px;
-      margin-bottom: 40px;
-}
-
+/* Tabbed nav */
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
   background-color: #EDE3D4;
