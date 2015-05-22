@@ -29,7 +29,7 @@ var Race = {
       $listTemplate.find('.raceName').text(race.name);
       $listTemplate.find('.raceDate').text("Date: " + BaseHelpers.dateToString(race.date));
       $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
-      $listTemplate.find('.raceDistance').text("Distance: " + race.distance + "furlongs");
+      $listTemplate.find('.raceDistance').text("Distance: " + race.distance + " furlongs");
 
       section.push($listTemplate)
     }
