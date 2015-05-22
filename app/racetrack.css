@@ -6,6 +6,10 @@ body{
   color: #968D83;
 }
 
+h1 {
+  font-size: 200px;
+}
+
 a{
   color: #85A6A1;
 }
