@@ -20,10 +20,13 @@ var Race = {
   },
 
   buildRaceList: function(races) {
+    var section = [];
+
     races.forEach(function(race) {
       var $listTemplate = app.$raceList.clone(true).show();
 
       $listTemplate.find('.raceName').text(race.name);
+      section.push($listTemplate)
 
 
       // $listTemplate.append(function() {
@@ -32,6 +35,7 @@ var Race = {
       //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
       // });
     });
+    return section
   }
 
 };
