@@ -45,7 +45,11 @@ var Race = {
     app.$raceList.html(section).show();
   },
 
-  buildRace: function()
+  buildRace: function(race) {
+
+
+
+  }
 
 
 };
@@ -60,6 +64,7 @@ var app = {
 
   cacheElements: function() {
     this.$raceList = $("#raceList");
+    this.$singleRace = $("#singleRace");
   },
 
   loadRaces: function() {
