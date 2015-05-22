@@ -27,7 +27,7 @@ var Race = {
 
       $listTemplate.find('.raceName').text(race.name);
 
-      app.$raceList.append($listTemplate).show();
+      app.$raceList.append($listTemplate)
 
 
       // $listTemplate.append(function() {
@@ -36,6 +36,8 @@ var Race = {
       //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
       // });
     });
+
+    app.$raceList.append($listTemplate).show();
   }
 
 };
