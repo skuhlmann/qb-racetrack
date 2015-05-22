@@ -21,10 +21,11 @@ var Race = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      app.$raceList.append(function() {
-        app.$raceList.find('.raceName').append(race.name);
-        app.$raceList.find('.racePurse').append("Purse: $ " + race.purse);
-        app.$raceList.find('.raceDistance').append("Distance: " + race.distance);
+      var $listTemplate = app.$raceList.clone(true);
+      $listTemplate.append(function() {
+        $listTemplate.find('.raceName').append(race.name);
+        $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
+        $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
       });
     });
   }
