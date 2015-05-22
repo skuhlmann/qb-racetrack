@@ -45,6 +45,7 @@ var Race = {
   },
 
   buildRace: function(race) {
+    $("#raceList").hide()l
     app.$singleRace.find('.raceName').text(race.name);
     app.$singleRace.find('.raceDate').text("Date: " + BaseHelpers.dateToString(race.date));
     app.$singleRace.find('.racePurse').text("Purse: $ " + race.purse);
