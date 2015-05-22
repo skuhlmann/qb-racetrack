@@ -27,6 +27,7 @@ a{
   color: #EDE3D4;
   background-color: #B0BFB6;
   border-color: #B0BFB6;
+  border: 0px outset buttonface;
 }
 
 .btn-info:hover {
