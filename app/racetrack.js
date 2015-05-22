@@ -37,8 +37,7 @@ var Race = {
                                     .attr("onclick", "app.loadRaceDetail(" + race.rid +")");
 
 
-      // $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
-      // $listTemplate.find('.raceDistance').text("Distance: " + race.distance + " furlongs");
+
 
       section.push($listTemplate)
     }
@@ -46,6 +45,10 @@ var Race = {
   },
 
   buildRace: function(race) {
+    app.$singleRace.find('.raceName').text(race.name);
+    app.$singleRace.find('.raceDate').text("Date: " + BaseHelpers.dateToString(race.date));
+    app.$singleRace.find('.racePurse').text("Purse: $ " + race.purse);
+    app.$singleRace.find('.raceDistance').text("Distance: " + race.distance + " furlongs");
 
 
 
