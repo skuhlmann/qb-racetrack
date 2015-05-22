@@ -29,6 +29,11 @@ a{
   border-color: #B0BFB6;
 }
 
+.btn-info:hover {
+  color: #EDE3D4;
+  background-color: #B0BFB6;
+}
+
 /* Races */
 
 .raceName{
