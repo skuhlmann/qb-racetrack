@@ -20,24 +20,16 @@ var Race = {
   },
 
   buildRaceList: function(races) {
-    var section = [];
-
     races.forEach(function(race) {
       var $listTemplate = app.$raceList.clone(true);
 
       $listTemplate.find('.raceName').text(race.name);
+      $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
+      $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
 
-
-
-
-      // $listTemplate.append(function() {
-      //   $listTemplate.find('.raceName').append(race.name);
-      //   $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
-      //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
-      // });
+      app.$raceList.append($listTemplate).show();
     });
 
-    app.$raceList.append($listTemplate).show();
   }
 
 };
