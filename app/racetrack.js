@@ -62,5 +62,9 @@ var app = {
   loadRaces: function() {
     var races = Race.getAll();
     Race.buildRaceList(races);
+  },
+
+  loadRaceDetail: function() {
+
   }
 };
