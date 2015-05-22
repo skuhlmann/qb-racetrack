@@ -65,7 +65,8 @@ var app = {
     Race.buildRaceList(races);
   },
 
-  loadRaceDetail: function() {
+  loadRaceDetail: function(id) {
+    console.log(id;)
 
   }
 };
