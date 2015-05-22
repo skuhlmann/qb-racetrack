@@ -23,7 +23,7 @@ a{
 
 /* buttons */
 
-.btn-info, .btn-info.active {
+.btn-info, .btn-info:focus {
   color: #EDE3D4;
   background-color: #B0BFB6;
   border-color: #B0BFB6;
