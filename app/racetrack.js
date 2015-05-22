@@ -23,9 +23,11 @@ var Race = {
     var section = [];
 
     races.forEach(function(race) {
-      var $listTemplate = app.$raceList.clone(true).show();
+      var $listTemplate = app.$raceList.clone(true)
 
       $listTemplate.find('.raceName').text(race.name);
+
+      app.$raceList.append($listTemplate)
 
 
       // $listTemplate.append(function() {
