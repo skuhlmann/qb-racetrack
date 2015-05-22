@@ -24,7 +24,7 @@ var Race = {
 
     for (var i in races) {
       var race = races[i];
-      var $listTemplate = app.$raceList.clone(true)
+      var $listTemplate = app.$raceList.clone(true).show();
 
       $listTemplate.find('.raceName').text(race.name);
       $listTemplate.find('.racePurse').text("Purse: $ " + race.purse);
