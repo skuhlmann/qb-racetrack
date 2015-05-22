@@ -15,7 +15,6 @@ var client = new Base({token: "29dcu6benpy5pdr7xditbfajeue", config: config});
 //Race object
 
 var Race = {
-
   getAll: function(){
     var races = client.all("races");
   },
@@ -31,13 +30,19 @@ var Race = {
   }
 };
 
-//Document ready
+//App object
 
-$(document).ready(function(){
+var app {
+  init: function() {
+    this.loadRaces();
+  },
 
-  $('#racelink').click(function(){
-    var raceId = parseInt($(this).attr("data-race-number"));
-    $('#race').removeClass("hidden");
-    Race.getOne(raceId);
-  });
-});
+  loadRaces: function() {
+    var races = Race.getAll();
+    app.buildRaceList(races);
+  },
+
+  buildRaceList: function(races) {
+    $("#raceList").text(races)
+  }
+};
