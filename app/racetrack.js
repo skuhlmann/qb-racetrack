@@ -45,6 +45,8 @@ var Race = {
     app.$raceList.html(section).show();
   },
 
+  buildRace: function()
+
 
 };
 
@@ -66,7 +68,7 @@ var app = {
   },
 
   loadRaceDetail: function(id) {
-    console.log(id);
-
+    var race = Race.getOne(id);
+    Race.buildRace(race);
   }
 };
