@@ -23,7 +23,7 @@ var Race = {
     var section = [];
 
     races.forEach(function(race) {
-      var $listTemplate = app.$raceList.clone(true)
+      var $listTemplate = app.$raceList.clone(true);
 
       $listTemplate.find('.raceName').text(race.name);
 
