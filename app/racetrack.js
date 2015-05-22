@@ -49,7 +49,7 @@ var Race = {
     app.$singleRace.find('.raceDate').text("Date: " + BaseHelpers.dateToString(race.date));
     app.$singleRace.find('.racePurse').text("Purse: $ " + race.purse);
     app.$singleRace.find('.raceDistance').text("Distance: " + race.distance + " furlongs");
-    app.$singleRace.show()l
+    app.$singleRace.show()
   }
 };
 
