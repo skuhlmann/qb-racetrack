@@ -20,7 +20,7 @@ var Race = {
   },
 
   getOne: function(id){
-    return client.getRecordInfo("races", id);
+    return client.find("races", id);
   },
 
   buildRaceList: function(races) {
