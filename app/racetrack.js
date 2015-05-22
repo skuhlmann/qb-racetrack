@@ -37,17 +37,17 @@ var Race = {
 
 
 
-    races.forEach(function(race) {
-      var $listTemplate = app.$raceList.clone(true);
+    // races.forEach(function(race) {
+    //   var $listTemplate = app.$raceList.clone(true);
 
-      $listTemplate.find('.raceName').text(race.name);
-      $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
-      $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
+    //   $listTemplate.find('.raceName').text(race.name);
+    //   $listTemplate.find('.racePurse').append("Purse: $ " + race.purse);
+    //   $listTemplate.find('.raceDistance').append("Distance: " + race.distance);
 
 
-    });
+    // });
 
-    app.$raceList.append($listTemplate).show();
+    // app.$raceList.append($listTemplate).show();
 
   }
 
