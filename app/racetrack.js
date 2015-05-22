@@ -21,7 +21,7 @@ var Race = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      var $listTemplate = app.$raceList.clone(true);
+      var $listTemplate = app.$raceList.clone(true).show();
 
       $listTemplate.find('.raceName').text(race.name);
 
