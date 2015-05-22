@@ -43,7 +43,8 @@ var app = {
   },
 
   buildRaceList: function(races) {
-    // $("#raceList").text(races);
-    console.log(races)
+    races.forEach(function(race) {
+      $("#raceList").text(race.name);
+    });
   }
 };
