@@ -38,7 +38,7 @@ var app = {
   },
 
   loadRaces: function() {
-    var  = Race.getAll();
+    var = Race.getAll();
     app.buildRaceList(races);
   },
 
