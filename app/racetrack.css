@@ -20,3 +20,10 @@ a{
   background-color: #EDE3D4;
   color: #968D83;
 }
+
+/* Races */
+
+.raceName{
+  font-size: 14px;
+  font-weight: 500;
+}
