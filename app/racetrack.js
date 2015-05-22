@@ -23,7 +23,7 @@ var Race = {
     races.forEach(function(race) {
       var $listTemplate = app.$raceList.clone(true);
 
-      $listTemplate.find('.raceName').append(race.name);
+      $listTemplate.find('.raceName').text(race.name);
 
 
       // $listTemplate.append(function() {
