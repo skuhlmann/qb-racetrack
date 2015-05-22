@@ -44,8 +44,10 @@ var app = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      $("#raceList .name").text(race.name);
-      $("#raceList .purse").text("$ " + race.purse);
+      $("#raceList").append(function(){
+        $("#raceList .name").text(race.name);
+        $("#raceList .purse").text("$ " + race.purse);
+      });
     });
   }
 };
