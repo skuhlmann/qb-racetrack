@@ -44,7 +44,8 @@ var app = {
 
   buildRaceList: function(races) {
     races.forEach(function(race) {
-      $("#raceList").text(race.name);
+      $("#raceList .name").text(race.name);
+      $("#raceList .purse").text("$ " + race.purse);
     });
   }
 };
