@@ -27,7 +27,7 @@ var Race = {
 
       $listTemplate.find('.raceName').text(race.name);
 
-      app.$raceList.append($listTemplate)
+
 
 
       // $listTemplate.append(function() {
