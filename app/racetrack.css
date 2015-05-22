@@ -21,6 +21,14 @@ a{
   color: #968D83;
 }
 
+/* buttons */
+
+.btn-info {
+  color: #EDE3D4;
+  background-color: #B0BFB6;
+  border-color: #46b8da;
+}
+
 /* Races */
 
 .raceName{
